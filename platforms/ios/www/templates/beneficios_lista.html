@@ -1,0 +1,66 @@
+<ion-view view-title="{{Title}}">
+    <ion-content>
+
+        <div class="list">
+
+            <div ng-repeat="item in beneficios" class=""  >
+
+                <!-- ITEM CON LA IMAGEN A LA DERECHA -->
+                <div ng-if="$index % 2 == 0" class="BeneficioListaItemDerecho" ng-click="detalle_beneficio(item)">
+                    <img class="imgBeneficio" src="{{item.src}}">
+
+                    <ion-slide-box  on-slide-changed="slideHasChanged($index)">
+
+                        <ion-slide>
+
+                            <h5>{{item.subtitulo}}</h5>
+                            <h2>{{item.titulo}}</h2>
+                            <h4>{{item.cuerpo | limitTo:10}}</h4>
+                            <p>{{item.likes}}</p>
+
+                        </ion-slide>
+
+                        <ion-slide ng-repeat="item in [1,2]">
+
+                            <h2> Por Defenir</h2>
+
+                        </ion-slide>
+
+                    </ion-slide-box>
+                </div>
+                <!--  /ITEM CON LA IMAGEN A LA DERECHA -->
+
+                <!-- ITEM CON LA IMAGEN A LA IZQUIERDA -->
+
+                <div ng-if="$index % 2 != 0" class="BeneficioListaItemIzquierdo" ng-click="detalle_beneficio(item)">
+                    <ion-slide-box  on-slide-changed="slideHasChanged($index)">
+
+                        <ion-slide>
+
+                            <h5>{{item.subtitulo}}</h5>
+                            <h2>{{item.titulo}}</h2>
+                            <h4>{{item.cuerpo | limitTo:10}}</h4>
+                            <p>{{item.likes}}</p>
+
+                        </ion-slide>
+
+                        <ion-slide ng-repeat="item in [1,2]">
+
+                            <h2> Por Defenir</h2>
+
+                        </ion-slide>
+
+                    </ion-slide-box>
+
+                    <img class="imgBeneficio"  src="{{item.src}}">
+
+                </div>
+
+                <!-- /ITEM CON LA IMAGEN A LA IZQUIERDA -->
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

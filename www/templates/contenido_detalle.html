@@ -5,32 +5,35 @@
 
         <img ng-if="isImg" class="videoIframa" src="http://localhost:8100/img/top-noticias.png" >
 
-        <h1> {{Title}} </h1>
+        <div class="container-det">
+                <h1> {{Title}} </h1>
 
-        <h4> {{fecha}} </h4>
+                <h4> {{fecha}} </h4>
 
-        <h5>{{cuerpo}}</h5>
+                <p>{{cuerpo}}</p>
+            
 
-        <div ng-if="isComentario" >
+            <div ng-if="isComentario" >
 
-            <div class="list list-inset">
+                <div class="list list-inset">
 
-            <label class="item item-input">
-                <input type="text" placeholder=" Escribir un comentario">
-            </label>
+                <label class="item item-input">
+                    <input type="text" placeholder=" Escribir un comentario">
+                </label>
+
+                </div>
+
+                <h3>{{num_comentarios}} Comentarios</h3>
+
+                <div ng-repeat="item in comentarios">
+
+                    <p>{{item.nombre}} {{item.apellido}}</p>
+                    <p>{{item.comentario}}</p>
+                    <p>{{item.hace}}</p>
+
+                </div>
 
             </div>
-
-            <h3>{{num_comentarios}} Comentarios</h3>
-
-            <div ng-repeat="item in comentarios">
-
-                <p>{{item.nombre}} {{item.apellido}}</p>
-                <p>{{item.comentario}}</p>
-                <p>{{item.hace}}</p>
-
-            </div>
-
         </div>
 
     </ion-content>

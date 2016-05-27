@@ -14,33 +14,29 @@
 
   <ion-side-menu side="left">
 
-    <ion-content>
+    <ion-content class="menu-left">
 
-      <div style="height: 130px">
-        <img  src="venkman.jpg">
-        <h3>Nombre Apellido</h3>
+      <div class="mibe">
+         <img  src="../../img/mibe-logo.png" width="80" height="80" class="logo">
       </div>
-      <ion-list>
-        <ion-item menu-close  href="#/app/home">
-          Home
+      <ion-list class="menu-listado">
+        <ion-item menu-close  href="#/app/home" class="menu-gris">
+         <img  src="../../img/home.png" width="40" height="40"> <h3>Home</h3>
         </ion-item>
-        <ion-item menu-close href="#/app/noticias">
-          Noticias
+        <ion-item menu-close href="#/app/noticias" class="menu-blanco">
+          <img  src="../../img/noticias.png" width="40" height="40"> <h3>Noticias</h3>
         </ion-item>
-        <ion-item menu-close href="#/app/home">
-          Seguimiento
+        <ion-item menu-close href="#/app/home" class="menu-gris">
+          <img  src="../../img/seguimiento.png" width="40" height="40" > <h3>Seguimiento Noticioso</h3>
         </ion-item>
-        <ion-item menu-close href="#/app/beneficios">
-          Beneficios
+        <ion-item menu-close href="#/app/beneficios" class="menu-blanco">
+          <img  src="../../img/beneficios.png" width="40" height="40" > <h3>Beneficios</h3>
         </ion-item>
-        <ion-item menu-close href="#/app/contenidoDetalle">
-          ConEstados Tv
+        <ion-item menu-close ng-click="test()" href="#/app/contenidoDetalle" class="menu-gris">
+          <img  src="../../img/videos.png" width="40" height="40" ><h3> ConEstados Tv</h3>
         </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Consurso Interno
-        </ion-item>
-        <ion-item menu-close href="#/app/perfil/">
-          Mi Perfil
+        <ion-item menu-close href="#/app/perfil/" class="menu-blanco">
+          <img  src="../../img/perfil.png" width="40" height="40" ><h3>Mi Perfil</h3>
         </ion-item>
       </ion-list>
     </ion-content>

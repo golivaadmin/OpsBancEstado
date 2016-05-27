@@ -1,0 +1,14 @@
+<ion-view view-title="Beneficios">
+    <ion-content>
+
+        <div class="list">
+
+            <div ng-repeat="item in beneficios" ng-click="categorias_beneficio(item)" class="BeneficioItem" style="background-image: url('{{item.src}}')" >
+                <h3>{{item.titulo}}</h3>
+                <p>{{item.cantidad}} Beneficios para ti</p>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

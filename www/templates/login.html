@@ -1,9 +1,26 @@
 <ion-view view-title="Inicio Sesión">
     <ion-content>
-        <ion-list>
-            <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-                {{playlist.title}}
-            </ion-item>
-        </ion-list>
+
+        <div class="list list-inset">
+
+            <label class="item item-input">
+                <input ng-model="user" type="text" placeholder="Rut">
+            </label>
+
+            <label class="item item-input">
+                <input ng-model="clave" type="text" placeholder="Clave">
+            </label>
+
+            <button ng-click="iniciar_session()" class="button button-block button-positive">
+                Ingresar
+            </button>
+
+            <i ng-click="olvido_clave()">Olvido su clave?</i>
+            <i ng-click="mas_informacion()">Más información</i>
+
+        </div>
+
+        <img src="">
+
     </ion-content>
 </ion-view>

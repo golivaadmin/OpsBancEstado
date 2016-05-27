@@ -1,1 +1,48 @@
-/* Empty. Add your own CSS if you like */
+
+
+/*  HOME  */
+
+.headerNoticias{
+
+    height: 200px;
+}
+
+.ultimoMinuto{
+    height: 150px;
+}
+
+
+/*  BENEFICIOS CATEGORIAS  */
+
+.BeneficioItem{
+
+    color: white;
+    height: 24vh;
+}
+
+/*  BENEFICIOS LISTA  */
+
+.BeneficioListaItemDerecho{
+
+    width: 50vw;
+
+
+}
+
+.BeneficioListaItemIzquierdo{
+
+    width: 50vw;
+
+}
+
+.imgBeneficio {
+
+    width: 50vw;
+}
+
+/* DETALLE  CONTENIDO*/
+
+.videoIframa{
+    width: 100vw;
+    height: 250px;
+}

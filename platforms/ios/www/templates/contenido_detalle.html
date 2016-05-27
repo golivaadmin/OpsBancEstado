@@ -1,0 +1,37 @@
+<ion-view view-title="{{Title}}">
+    <ion-content>
+
+        <iframe ng-if="isVideo" class="videoIframa" src="https://www.youtube.com/embed/RNwSYjoT-UA" frameborder="0" allowfullscreen></iframe>
+
+        <img ng-if="isImg" class="videoIframa" src="http://localhost:8100/img/top-noticias.png" >
+
+        <h1> {{Title}} </h1>
+
+        <h4> {{fecha}} </h4>
+
+        <h5>{{cuerpo}}</h5>
+
+        <div ng-if="isComentario" >
+
+            <div class="list list-inset">
+
+            <label class="item item-input">
+                <input type="text" placeholder=" Escribir un comentario">
+            </label>
+
+            </div>
+
+            <h3>{{num_comentarios}} Comentarios</h3>
+
+            <div ng-repeat="item in comentarios">
+
+                <p>{{item.nombre}} {{item.apellido}}</p>
+                <p>{{item.comentario}}</p>
+                <p>{{item.hace}}</p>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

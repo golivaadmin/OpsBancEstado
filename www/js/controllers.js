@@ -1,5 +1,10 @@
 var app = angular.module('starter.controllers', []);
 
+app.config( ['$compileProvider',function( $compileProvider ){
+
+}
+]);
+
 app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   // With the new view caching in Ionic, Controllers are only called
@@ -8,6 +13,8 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-
+   $scope.test = function () {
+        last_contenido = aux_obj;
+    }
 
 });

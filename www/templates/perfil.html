@@ -1,9 +1,13 @@
-<ion-view view-title="Noticias">
+<ion-view view-title="MI PERFIL">
     <ion-content>
-        <ion-list>
-            <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-                {{playlist.title}}
-            </ion-item>
-        </ion-list>
+
+        <img style="height: 200px ; width: 100vw" src="{{foto_perfil}}" >
+
+        <div>
+
+            <h1>{{nombre}} {{apellido}}</h1>
+
+        </div>
+
     </ion-content>
 </ion-view>

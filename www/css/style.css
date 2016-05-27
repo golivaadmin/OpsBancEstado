@@ -4,29 +4,101 @@
 
 .headerNoticias{
 
-    height: 200px;
+    height: 40vh;
 }
+
+.headerNoticias h1{
+	color: #fff;
+	font-weight: 700;
+	font-size:20px;
+	position: absolute;
+	bottom: 40px;
+	left: 20px;
+	}
 
 .ultimoMinuto{
-    height: 150px;
+    height: 15vh;
+    padding:0 10px;
+    margin-left: 10px;
 }
 
+.ultimoMinuto .slider-pager .slider-pager-page{
+	display: none !important;
+	}
+
+.ultimoMinuto h1 {
+	font-size: 1.2em;
+	color:#000;
+	margin-top: 2vh;
+	display: block;
+}
+
+.ultimoMinuto h4 {
+	font-size: 14px;
+	font-weight: 300;
+    color: #ccc;
+   position: absolute;
+    right: 33px;
+    top: 8px;
+}
+
+.ultimoMinuto h5 {
+	font-size: 0.8em;
+    color: #666;
+    padding-left: 15px;
+    width: 40vw;
+    margin-top:3vh;
+}
+
+.menu-home .row {
+	padding:0;
+}
+
+.botones-home .row .col {
+	padding:2vh 0;
+	max-height: 17vh;
+}
+
+.botonera {
+	margin-bottom: 1px;
+}
+
+.menu-home h3 {
+	font-size:1em;
+	text-align: center;
+	color:#fff;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+.menu-home img {
+	display: block;
+	margin: auto;
+	}
 
 /*  BENEFICIOS CATEGORIAS  */
 
 .BeneficioItem{
-
-    color: white;
-    height: 24vh;
+	color: white;
+    height: 23.2vh;
 }
 
+.BeneficioItem h3{
+	font-size: 1.9em;
+    padding: 10vh 0 0 5vw;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.BeneficioItem p{
+	font-size:12px;
+	padding:0 0 0 5vw;
+}
 /*  BENEFICIOS LISTA  */
 
 .BeneficioListaItemDerecho{
 
     width: 50vw;
-
-
 }
 
 .BeneficioListaItemIzquierdo{
@@ -40,9 +112,86 @@
     width: 50vw;
 }
 
+.caja-slider {
+	width:50vw;
+}
+
+.caja-slider h2 {
+	font-size: 22px;
+	font-weight: 600;
+	margin:2vh 0 2vw 2vh;
+}
+
+.caja-slider h4 {
+	font-size: 12px;
+	color: #666;
+	margin-left: 15px;
+	}
+
+.caja-slider h5 {
+	font-size: 0.9em;
+	font-weight: 400;
+	color: #666;
+	margin:2vh 4vw;
+	}
+
+.caja-slider p {
+	margin-left:15px;
+}
+
+.beneficios-lista .row {
+	padding:0;
+}
+
+.beneficios-lista .row .col {
+	padding:0;
+}
+
 /* DETALLE  CONTENIDO*/
 
 .videoIframa{
     width: 100vw;
     height: 250px;
 }
+
+.container-det {
+	padding:0 20px;
+}
+
+.container-det h1{
+	font-weight: 700;
+ 	font-size:2em;
+}
+
+.container-det h4{
+	font-size:0.8em;
+	}
+
+
+/* MENÚ LATERAL*/
+
+.menu-left img {
+	float: left;
+	margin:0 5vw 0 0;
+}
+
+.menu-left h3 {
+	line-height: 6vh;
+	font-size: 1em;
+}
+
+.menu-left .menu-gris a {
+	background:#F4F4F4;
+}
+.menu-left .menu-blanco a {
+	background:#fff;
+}
+
+.menu-left .mibe{
+	height: 130px
+}
+.menu-left .mibe img{
+	display: block;
+	margin:auto;
+}
+

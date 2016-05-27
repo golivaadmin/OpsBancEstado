@@ -1,57 +1,50 @@
-<ion-view view-title="">
+<ion-view view-title="HOME">
     <ion-content>
 
-        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" slider-interval="3000">
 
             <ion-slide ng-repeat="item in noticias">
 
-                <div class="headerNoticias" style="background-image: url('{{item.src}}')" ng-click="noticias_detalle(item)">
+                <div class="headerNoticias" ng-click="noticias_detalle(item)">
+                    <img src="{{item.src}}">
                     <h1>{{item.titulo}}</h1>
                 </div>
 
             </ion-slide>
 
         </ion-slide-box>
-
-        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
 
             <ion-slide ng-repeat="item in ultimo_minuto">
 
                 <div class="ultimoMinuto" ng-click="ultimo_minuto_detalle(item)">
-                    <h3>{{item.titulo}}</h3>
-                    <h1>{{item.cuerpo}}</h1>
-                    <h4>{{item.fecha}}</h4>
+                    <div class="titular">
+                        <h5>{{item.fecha}}</h5>
+                        <h4>{{item.titulo}}</h4>
+                    </div>
+                        <h1>{{item.cuerpo}}</h1>
                 </div>
 
             </ion-slide>
 
         </ion-slide-box>
+            <div class="botones-home">
+                    <div ng-repeat="item in botones" class="menu-home">
+                        <div class="row">
 
-        <div>
+                            <div ng-click="go_to(item[0])" style="background-color: {{item[0].colorFondo}}" class="col">
+                                <img src="{{item[0].icono}}">
+                                <h3>{{item[0].titulo}}</h3>
+                            </div>
 
-           <div>
+                            <div ng-click="go_to(item[1])" style="background-color: {{item[1].colorFondo}}" class="col">
+                                <img src="{{item[1].icono}}">
+                                <h3>{{item[1].titulo}}</h3>
+                            </div>
 
-               <div style="background-color: red">
-                   <img src="">
-                   <h3>Noticias</h3>
-               </div>
-
-           </div>
-
-            <div ng-repeat="item in botones">
-
-                <div style="background-color: {{item[0].colorFondo}}">
-                    <img src="{{item[0].icono}}">
-                    <h3>{{item[0].titulo}}</h3>
+                        </div>
+                    </div>
                 </div>
-
-                <div style="background-color: {{item[1].colorFondo}}">
-                    <img src="{{item[1].icono}}">
-                    <h3>{{item[1].titulo}}</h3>
-                </div>
-
-            </div>
-
         </div>
     </ion-content>
 </ion-view>
